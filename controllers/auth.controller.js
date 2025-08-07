@@ -37,7 +37,7 @@ const userSignup = async(req,res) => {
         return res.status(201).json({msg:"User is  registered successfully!!!!",user})
         
     } catch (error) {
-        console.error(error);
+        // console.log(error);
         return res.status(500).json({msg:"Internal server error"})
     }
 }
@@ -76,7 +76,7 @@ const userLogin = async(req,res) => {
         return res.status(201).json({msg:"User is  Logged in!!!!",token})
         
     } catch (error) {
-        console.error(error);
+        // console.error(error);
         return res.status(500).json({msg:"Internal server error"})
     }
 }
